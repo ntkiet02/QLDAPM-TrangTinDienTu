@@ -6,13 +6,13 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Người dùng</title>
+		<title>Người dùng - iOlds</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 	</head>
 	<body>
 		<div class="container">
-			<?php include_once 'navbar.php'; ?>
+			<?php include_once "navbar.php"; ?>
 			
 			<div class="card mt-3">
 				<h5 class="card-header">Người dùng</h5>
@@ -49,7 +49,7 @@
 											<td>' . ($value['QuyenHan'] == 1 ? "Quản trị viên" : "Thành viên") . '</td>
 											<td>' . ($value['Khoa'] == 1 ? "Đang bị khóa" : "Hoạt động") . '</td>
 											<td class="text-center"><a href="nguoidung_sua.php?id=' . $value['ID'] . '"><i class="bi bi-pencil-square"></i></a></td>
-											<td class="text-center"><a href="nguoidung_xoa.php?id=' . $value['ID'] . '" onclick="return confirm(\'Bạn muốn xóa người dùng ' . $value['HoVaTen'] . ' không?\')"><i class="bi bi-trash text-danger"></i></a></td>
+											<td class="text-center"><a href="nguoidung_xoa.php?id=' . $value['ID'] . '"><i class="bi bi-trash text-danger"></i></a></td>
 										  </tr>';
 								}
 							?>
@@ -58,7 +58,7 @@
 				</div>
 			</div>
 			
-			<?php include_once 'footer.php'; ?>
+			<?php include_once "footer.php"; ?>
 		</div>
 		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
